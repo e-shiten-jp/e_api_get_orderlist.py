@@ -574,7 +574,8 @@ bool_login = func_login(int_p_no, my_url, my_userid, my_passwd,  class_cust_prop
 
 # ログインOKの場合
 if bool_login :
-
+    
+    
     print()
     print('-- 注文約定一覧の取得 -------------------------------------------------------------')
     int_p_no = int_p_no + 1
@@ -627,11 +628,7 @@ if bool_login :
         print('概算代金:\t', list_order[i].get('sGaisanDaikin'))
         print()
         
-        
-
-
-
-    
+           
     print()
     print('-- logout -------------------------------------------------------------')
     # 送信項目、戻り値の解説は、マニュアル「立花証券・ｅ支店・ＡＰＩ（ｖ〇）、REQUEST I/F、機能毎引数項目仕様」
